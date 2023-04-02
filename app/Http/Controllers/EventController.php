@@ -15,7 +15,7 @@ class EventController extends Controller
     public function index()
     {
         $events = Event::get();
-        return view('admin.events.index', compact('events'));
+        return view('admin.events.events', compact('events'));
     }
 
     /**
@@ -46,8 +46,7 @@ class EventController extends Controller
      */
     public function show(Event $event)
     {
-        $events = Event::get();
-        return view('admin.events.show', compact('events'));
+
     }
 
     /**

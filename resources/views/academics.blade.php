@@ -1,73 +1,95 @@
 <x-guest-layout>
     <main id="main">
 
-        <!-- ======= academics Section ======= -->
-        <section id="academics" class="academics">
+        <!-- ======= portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
                     <h2>Academics</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                 </div>
-
                 <div class="row" data-aos="fade-up" data-aos-delay="100">
                     <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="academics-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">Card</li>
-                            <li data-filter=".filter-web">Web</li>
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">ALL</li>
+                            <li data-filter=".filter-app">BS COMPUTER SCIENCE</li>
+                            <li data-filter=".filter-card">BS INFORMATION TECHNOLOGY</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="row academics-container" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="col-lg-4 col-md-6 academics-item filter-app">
-                        <div class="academics-wrap">
-                            <img src="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-                                class="img-fluid" alt="">
-                            <div class="academics-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
-                                <div class="academics-links">
-                                    <a href="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-                                        data-gallery="academicsGallery" class="academics-lightbox" title="App 1"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="academics-details.html" class="academics-details-lightbox"
-                                        data-glightbox="type: external" title="academics Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class=" portfolio-item filter-card">
+                        <div class="">
+                            <h1>
+                                BSIT Program Description
+                            </h1>
+                            <p class="text-justify">BS Computer Science is a 4-year course that produces graduates
+                                with the computing
+                                concepts and theories, algorithmic foundations and new developments in computing.
+                                The program prepares students to design and create algorithmically complex software
+                                and develop new and effective algorithms for solving computing problems.
+                            </p>
+                            <p>
+                                The program also includes the study of the standards and practices in Software
+                                Engineering. It Prepares students to acquire skills and disciplines required for
+                                designing, writing and modifying software components, modules and applications that
+                                comprise software solutions.
+                            </p>
+                            <p class="font-weight-bold">Program Outcomes:
+                                <li>Knowledge for Solving Computing Problems</li>
+                                <li>Problem Analysis</li>
+                                <li>Design/Development of Solutions</li>
+                                <li>Modern Tool usage</li>
+                                <li>Individual and Team Work</li>
+                                <li>Communication</li>
+                                <li>Computing Professionalism and Social Responsibility</li>
+                                <li>Life-Long Learning</li>
+                            </p>
                         </div>
                     </div>
-                    {{--
-                    <div class="col-lg-4 col-md-6 academics-item filter-app">
-                        <div class="academics-wrap">
-                            <img src="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-                                class="img-fluid" alt="">
-                            <div class="academics-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
-                                <div class="academics-links">
-                                    <a href="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
-                                        data-gallery="academicsGallery" class="academics-lightbox" title="App 1"><i
-                                            class="bx bx-plus"></i></a>
-                                    <a href="academics-details.html" class="academics-details-lightbox"
-                                        data-glightbox="type: external" title="academics Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
+                    <div class=" portfolio-item filter-app">
+
+                        <div class="">
+                            <h1>
+                                BSCS Program Description
+                            </h1>
+                            <p class="text-justify">BS Computer Science is a 4-year course that produces graduates
+                                with the computing
+                                concepts and theories, algorithmic foundations and new developments in computing.
+                                The program prepares students to design and create algorithmically complex software
+                                and develop new and effective algorithms for solving computing problems.
+                            </p>
+                            <p>
+                                The program also includes the study of the standards and practices in Software
+                                Engineering. It Prepares students to acquire skills and disciplines required for
+                                designing, writing and modifying software components, modules and applications that
+                                comprise software solutions.
+                            </p>
+                            <p class="font-weight-bold">Program Outcomes:
+                            </p>
+                            <p class="">A graduate of Bachelor of Science in Computer Science must be able to:
+                            </p>
+                            <li>Articulate the computing theories, principles and knowledge domain to address real-world
+                                problems.</li>
+                            <li>Conduct research and determine the latest developments in the specific field of
+                                practice.</li>
+                            <li>Work effectively with teams and communicate orally and in writing.</li>
+                            <li>Understand computing problems, define the requirements to design an appropriate
+                                solution.</li>
+                            <li>Develop computing solutions utilizing modern computing tools.</li>
+                            <li>Demonstrate professional, social and ethical responsibility.</li>
+                            <li>Engage in independent learning for continual development as a computing professional.
+                            </li>
+
+
                         </div>
-                    </div> --}}
+                    </div>
 
 
                 </div>
-
             </div>
-        </section><!-- End academics Section -->
+        </section><!-- End portfolio Section -->
 
     </main><!-- End #main -->
 </x-guest-layout>

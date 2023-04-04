@@ -24,7 +24,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label>Content:</label>
-                                <textarea class="form-control" style="height:150px" name="content" placeholder="Detail">{{ $event->content }}</textarea>
+                                <textarea id="summernote" name="content" class="form-control summernote"cols="30" rows="10">{{ $event->content }}</textarea>
                             </div>
                         </div>
                         <div class="col-sm-12">

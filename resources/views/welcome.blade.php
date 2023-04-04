@@ -19,16 +19,32 @@
                 <!-- Create the carousel of videos -->
                 <div class="glightbox-carousel" data-glightbox="gallery">
                     <!-- Create the anchor tag with the "glightbox" class -->
-                    <a href="https://www.youtube.com/watch?v=neFgfxE8cfU" class="glightbox  mb-4"
-                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
                     <a href="assets/img/c1.png" class="glightbox mb-4"
                         onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
                     <a href="assets/img/c2.jpg" class="glightbox mb-4"
                         onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
+                    <a href="assets/img/START-UP/1.jpg" class="glightbox mb-4"
+                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
+                    <a href="assets/img/START-UP/14.jpg" class="glightbox mb-4"
+                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
+                    <a href="assets/img/START-UP/8.jpg" class="glightbox mb-4"
+                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
+                    <a href="assets/img/ticketing system/3.jpg" class="glightbox mb-4"
+                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
+                    <a href="assets/img/ticketing system/5.jpg" class="glightbox mb-4"
+                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
+                    <a href="assets/img/ticketing system/6.jpg" class="glightbox mb-4"
+                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
+                    <a href="assets/img/SITE Academics/1.jpg" class="glightbox mb-4"
+                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
+                    <a href="assets/img/SITE Academics/2.jpg" class="glightbox mb-4"
+                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
+                    <a href="assets/img/SITE Academics/3.jpg" class="glightbox mb-4"
+                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
+                    <a href="assets/img/SITE Academics/4.jpg" class="glightbox mb-4"
+                        onclick="event.preventDefault(); GLightbox({href: this.href})"></a>
                 </div>
             </div>
-
-
 
 
         </div>

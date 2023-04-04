@@ -1,39 +1,37 @@
 <x-guest-layout>
     <main id="main">
         <!-- ======= About Section ======= -->
-        <section id="events" class="events">
+        <section id="events" class="events" style="height:100vh;width:100%;">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2 class="text-sm-center">POST</h2>
                 </div>
-                <table class="table">
+
+                <table class="table table-hover">
+                    <a href="{{ route('events.create') }}" type="button" class="btn btn-success">Create</a>
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Action</th>
+                            <th scope="col">Feature</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+                        @foreach ($events as $event)
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    {{ $event->name }}
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary">Show</button><button type="button"
+                                        class="btn btn-success">Edit</button><button type="button"
+                                        class="btn btn-danger">Delete</button>
+                                </td>
+                                <td><button type="button" class="btn btn-primary">Feature</button></td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

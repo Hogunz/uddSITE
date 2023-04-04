@@ -20,6 +20,10 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/academics', function () {
+    return view('academics');
+});
+
 Route::get('/faculty', function () {
     return view('faculty');
 });
@@ -27,20 +31,14 @@ Route::get('/pvmo', function () {
     return view('pvmo');
 });
 
-Route::get('/events', function () {
-    return view('admin.events.events');
-});
 Route::get('/contact', function () {
     return view('contact');
 });
 
-
+Route::get('/events/index', [EventController::class, 'allEvents'])->name('events.dashboard');
 Route::resource('events', EventController::class);
+Route::get('/events/{event}', [EventController::class, 'show'])->name('event.show');
 
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
 
 require __DIR__ . '/auth.php';
 

@@ -1,10 +1,11 @@
 <x-guest-layout>
+
     <main id="main">
         <!-- ======= About Section ======= -->
         <section id="events" class="events" style="height:100vh;width:100%;">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2 class="text-sm-center">POST</h2>
+                    <h2 class="text-sm-center">POST TABLE</h2>
                 </div>
 
                 <table class="table table-hover">
@@ -14,20 +15,31 @@
                             <th scope="col">#</th>
                             <th scope="col">Title</th>
                             <th scope="col">Action</th>
-                            <th scope="col">Feature</th>
+
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>asdasdasdasd</td>
-                            <td>
-                                <button type="button" class="btn btn-primary">Show</button><button type="button"
-                                    class="btn btn-success">Edit</button><button type="button"
-                                    class="btn btn-danger">Delete</button>
-                            </td>
-                            <td><button type="button" class="btn btn-primary">Feature</button></td>
-                        </tr>
+                        @foreach ($events as $event)
+                            <tr>
+                                <th scope="row"></th>
+                                <td>
+                                    {{ $event->name }}
+                                </td>
+                                <td>
+                                    <a href="" class="href">
+                                        <button type="button" class="btn btn-primary">Show</button>
+                                    </a>
+                                    <a href="{{ route('events.edit', ['event' => $event->id]) }}" class="">
+                                        <button type="button" class="btn btn-success">Edit</button>
+                                    </a>
+                                    <form action="{{ route('events.destroy', $event) }}" method="post">
+                                        @csrf
+                                        @method('delete')
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

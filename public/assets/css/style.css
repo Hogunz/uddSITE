@@ -423,7 +423,8 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("/assets/img/mib.jpg") top right;
+  /* background: url("/assets/img/bg-site.png") top right; */
+  background-color:gray;
   background-size: cover;
 }
 
@@ -889,132 +890,192 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# academics
 --------------------------------------------------------------*/
-.services .icon-box {
-  text-align: center;
-  padding: 70px 20px 80px 20px;
-  transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
-}
+.academics .academics-item {
+    margin-bottom: 30px;
+  }
 
-.services .icon-box .icon {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: ease-in-out 0.3s;
-  position: relative;
-}
+  .academics #academics-flters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+  }
 
-.services .icon-box .icon i {
-  font-size: 36px;
-  transition: 0.5s;
-  position: relative;
-}
+  .academics #academics-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px 10px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+  }
 
-.services .icon-box .icon svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  .academics #academics-flters li:hover,
+  .academics #academics-flters li.filter-active {
+    color: #fff;
+    background: #34b7a7;
+  }
 
-.services .icon-box .icon svg path {
-  transition: 0.5s;
-  fill: #f5f5f5;
-}
+  .academics #academics-flters li:last-child {
+    margin-right: 0;
+  }
 
-.services .icon-box h4 {
-  font-weight: 600;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
-}
+  .academics .academics-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(34, 34, 34, 0.6);
+  }
 
-.services .icon-box h4 a {
-  color: #222222;
-  transition: ease-in-out 0.3s;
-}
+  .academics .academics-wrap::before {
+    content: "";
+    background: rgba(34, 34, 34, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
 
-.services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
+  .academics .academics-wrap img {
+    transition: all ease-in-out 0.3s;
+  }
 
-.services .iconbox-blue i {
-  color: #47aeff;
-}
+  .academics .academics-wrap .academics-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+  }
 
-.services .iconbox-blue:hover .icon i {
-  color: #fff;
-}
+  .academics .academics-wrap .academics-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
 
-.services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
-}
+  .academics .academics-wrap .academics-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+  }
 
-.services .iconbox-orange i {
-  color: #ffa76e;
-}
+  .academics .academics-wrap .academics-links {
+    text-align: center;
+    z-index: 4;
+  }
 
-.services .iconbox-orange:hover .icon i {
-  color: #fff;
-}
+  .academics .academics-wrap .academics-links a {
+    color: #fff;
+    margin: 0 5px 0 0;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
 
-.services .iconbox-orange:hover .icon path {
-  fill: #ffa76e;
-}
+  .academics .academics-wrap .academics-links a:hover {
+    color: #78d9cd;
+  }
 
-.services .iconbox-pink i {
-  color: #e80368;
-}
+  .academics .academics-wrap:hover::before {
+    opacity: 1;
+  }
 
-.services .iconbox-pink:hover .icon i {
-  color: #fff;
-}
+  .academics .academics-wrap:hover img {
+    transform: scale(1.2);
+  }
 
-.services .iconbox-pink:hover .icon path {
-  fill: #e80368;
-}
+  .academics .academics-wrap:hover .academics-info {
+    opacity: 1;
+  }
 
-.services .iconbox-yellow i {
-  color: #ffbb2c;
-}
+  /*--------------------------------------------------------------
+  # academics Details
+  --------------------------------------------------------------*/
+  .academics-details {
+    padding-top: 0;
+  }
 
-.services .iconbox-yellow:hover .icon i {
-  color: #fff;
-}
+  .academics-details .academics-details-slider img {
+    width: 100%;
+  }
 
-.services .iconbox-yellow:hover .icon path {
-  fill: #ffbb2c;
-}
+  .academics-details .academics-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
 
-.services .iconbox-red i {
-  color: #ff5828;
-}
+  .academics-details .academics-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #34b7a7;
+  }
 
-.services .iconbox-red:hover .icon i {
-  color: #fff;
-}
+  .academics-details .academics-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #34b7a7;
+  }
 
-.services .iconbox-red:hover .icon path {
-  fill: #ff5828;
-}
+  .academics-details .academics-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
+  }
 
-.services .iconbox-teal i {
-  color: #11dbcf;
-}
+  .academics-details .academics-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
 
-.services .iconbox-teal:hover .icon i {
-  color: #fff;
-}
+  .academics-details .academics-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+  }
 
-.services .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
-}
+  .academics-details .academics-info ul li+li {
+    margin-top: 10px;
+  }
+
+  .academics-details .academics-description {
+    padding-top: 30px;
+  }
+
+  .academics-details .academics-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .academics-details .academics-description p {
+    padding: 0;
+  }
 
 /*--------------------------------------------------------------
 # Contact

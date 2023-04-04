@@ -6,16 +6,18 @@
                 <div class="section-title">
                     <h2 class="text-sm-center">Post</h2>
                 </div>
+                <x-auth-validation-errors></x-auth-validation-errors>
                 <form action="{{ route('events.store') }}" method="post" enctype="multipart/form-data" class="border p-5">
+                    @csrf
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="title">Title</label>
-                            <input type="name" class="form-control" id="title">
+                        <div class="form-group col-md-12">
+                            <label for="name">Title</label>
+                            <input type="text" name="name" class="form-control" id="name">
                         </div>
                     </div>
 
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <label for="image">Image</label>
                             <div class="input-group mb-3">
                                 <div class="">
@@ -23,10 +25,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group col-md-4">
-                            <label for="content">Content</label>
+                    </div>
 
-                            <textarea name="content"class="form-control" id="content" cols="30" rows="10"></textarea>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="content">Content</label>
+                            <textarea id="summernote" name="content" class="form-control summernote"cols="30" rows="10"></textarea>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary mt-4">Submit</button>
@@ -37,3 +41,10 @@
         </section><!-- End Testimonials Section -->
     </main><!-- End #main -->
 </x-guest-layout>
+
+<!-- Initialize Summernote -->
+<script>
+    $(document).ready(function() {
+        $('.summernote').summernote();
+    });
+</script>

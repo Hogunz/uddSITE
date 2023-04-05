@@ -25,9 +25,9 @@
                                     {{ $event->name }}
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-primary">Show</button><button type="button"
-                                        class="btn btn-success">Edit</button><button type="button"
-                                        class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-primary">Show</button>
+                                    <button type="button" class="btn btn-success">Edit</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
                                 </td>
                                 <td><button type="button" class="btn btn-primary">Feature</button></td>
                             </tr>

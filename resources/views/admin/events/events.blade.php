@@ -25,14 +25,14 @@
                             </div>
                         @endforeach
                     </div>
-                    <div class="col-sm-4 p-4">
+                    <div class="col-sm-4 p-4 ">
                         @foreach ($events->shuffle()->take(5) as $event)
                             <div class="row py-3 mr-2 border-bottom">
                                 <div class="col-sm-6 p-0">
                                     <img src="{{ asset('storage/' . $event->image) }}" class="img-fluid">
                                 </div>
                                 <div class="col-sm-6" data-aos="fade-left">
-                                    <a href=""> <span
+                                    <a href="{{ route('event.show', $event->id) }}"> <span
                                             class="font-weight-bold text-sm-xs text-primary ">{{ $event->name }}</span></a><br>
                                     <span><i
                                             class="fa-regular fa-user text-dark"></i>{{ $event->user->name }}</span><br>

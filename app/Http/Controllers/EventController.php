@@ -107,7 +107,7 @@ class EventController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'content' => 'required|string',
+            'content' => 'nullable',
         ]);
 
         if ($request->hasFile('image')) {
@@ -116,6 +116,7 @@ class EventController extends Controller
         }
 
         $event->name = $request->name;
+        $event->content = $request->content;
         $event->save();
 
         return redirect()->route('events.dashboard');

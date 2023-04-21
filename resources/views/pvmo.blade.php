@@ -6,15 +6,16 @@
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2 class="text-center">Universidad de Dagupan</h2>
-                    <p>Universidad de Dagupan as an Institution for higher learning is aware of its important role in
-                        the development of the Philippines. Along with its commitment towards providing quality
+                    <p class=""style="text-align:justify;">Universidad de Dagupan as an Institution for higher
+                        learning is aware of its important role in
+                        the development of the Philippines. <br>Along with its commitment towards providing quality
                         eucation for the youth, Universidad de Dagupan also puts emphasis on the development of the
                         national education goals of the Philippines and the protection of its environment.
                     </p>
                 </div>
 
                 <div class="row gap-2">
-                    <div class="col border p-4"
+                    <div class="col-lg col-sm-6 border p-4"
                         style=" background-image: linear-gradient(to bottom, rgba(109, 207, 246, 0.75), transparent); "
                         data-aos="fade-right">
                         <h1>
@@ -26,7 +27,7 @@
                             developed for his personal fulfillment and community uplift.
                         </p>
                     </div>
-                    <div class="col border p-4">
+                    <div class="col-lg col-sm-6 border p-4">
                         <h1>
                             Vision
                         </h1>
@@ -35,7 +36,7 @@
                         </p>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col border p-4">
+                    <div class="col-lg col-sm-6 border p-4">
                         <h1>
                             Mission
                         </h1>
@@ -45,7 +46,7 @@
                             is consistent with the needs of the society.
                         </p>
                     </div>
-                    <div class="col border p-4"
+                    <div class="col-lg col-sm-6 border p-4"
                         style=" background-image: linear-gradient(to bottom, rgba(109, 207, 246, 0.75), transparent); "
                         data-aos="fade-left">
                         <h1>
@@ -75,7 +76,7 @@
                 </div>
 
                 <div class="row gap-2">
-                    <div class="col border p-4">
+                    <div class="col-lg col-sm-6  border p-2">
                         <h1>
                             Vision
                         </h1>
@@ -85,7 +86,7 @@
                         </p>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col border p-4" data-aos="fade-right"
+                    <div class="col-lg col-sm-6  border p-2" data-aos="fade-right"
                         style=" background-image: linear-gradient(to bottom, rgba(109, 207, 246, 0.75), transparent); ">
                         <h1>
                             Mission
@@ -113,7 +114,7 @@
                         </ul>
                         </p>
                     </div>
-                    <div class="col border p-4" data-aos="fade-left"
+                    <div class="col-lg col-sm-6  border p-2" data-aos="fade-left"
                         style=" background-image: linear-gradient(to bottom, rgba(109, 207, 246, 0.75), transparent); ">
                         <h1>
                             Objectives

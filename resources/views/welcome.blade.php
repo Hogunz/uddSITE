@@ -5,16 +5,22 @@
     <!-- ======= Hero Section ======= -->
 
     <section id="hero" class="d-flex align-items-center">
+
         <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
-            <div>
-                <img src="/assets/img/logo_site.png" style="width:200px; " alt="">
+
+            <div class="circle-container">
+                <img src="/assets/img/circle.png" alt="">
+                <a href="https://youtu.be/q8eg5CcU4zY" class="glightbox play-btn" data-glightbox="gallery">
+                    <img src="/assets/img/logo_site.png" alt="">
+                </a>
             </div>
-            <h1 class="text-white text-center">School of Information <br>Technology Education</h1>
+
+            <h4 class="text-white text-center">Center of Development in Information <br>Technology Education</h4>
 
             <div class="gallery-container">
 
                 <!-- Create the button to open the lightbox gallery -->
-                <a href="https://youtu.be/q8eg5CcU4zY" class="glightbox play-btn mb-4" data-glightbox="gallery"></a>
+
 
                 <!-- Create the carousel of videos -->
                 <div class="glightbox-carousel" data-glightbox="gallery">

@@ -4,12 +4,11 @@
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
-
                 <div class="section-title "
-                    style="min-height:100vh;  display: flex;
+                    style="min-height:100vh; min-width:100%;  display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center; text-align:justify; text-indent:32px;">
+                align-items: center; text-align:justify;">
                     <h2 class="text-center">About</h2>
                     <p>The School of Information Technology Education (SITE) at Universidad de Dagupan is a higher
                         education institution

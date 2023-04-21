@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\TestimonialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +21,6 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('/academics', function () {
-    return view('academics');
-});
 
 Route::get('/faculty', function () {
     return view('faculty');
@@ -34,12 +32,13 @@ Route::get('/pvmo', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-
+//Events
 Route::get('/events/index', [EventController::class, 'allEvents'])->name('events.dashboard');
 Route::resource('events', EventController::class);
 Route::get('/events/{event}', [EventController::class, 'show'])->name('event.show');
-
-
+//testimonials
+Route::get('/academics', [TestimonialController::class, 'academics'])->name('academics');
+Route::resource('testimonials', TestimonialController::class);
 require __DIR__ . '/auth.php';
 
 

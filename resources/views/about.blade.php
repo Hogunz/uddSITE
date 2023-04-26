@@ -4,7 +4,7 @@
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
-                <div class="section-title "
+                <div class="section-title"
                     style="min-height:100vh; min-width:100%;  display: flex;
                 flex-direction: column;
                 justify-content: center;

@@ -90,7 +90,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #34b7a7;
+  background: #0000FF;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -104,7 +104,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #49cbbb;
+  background: #5050fc;
   color: #fff;
 }
 
@@ -375,7 +375,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #34b7a7;
+  color: #3441b7;
 }
 
 .navbar-mobile .getstarted,
@@ -446,6 +446,29 @@ h6 {
 	transform-origin: center;
     z-index: 1;
   }
+  .animate-spin {
+    animation: spin 2s linear 1;
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }  .animate-spin1 {
+    animation: spin 2s linear reverse;
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -489,7 +512,7 @@ h6 {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    background: radial-gradient(#009961 50%, rgba(0, 153, 97, 0.4) 52%);
+
     border-radius: 50%;
     display: block;
     overflow: hidden;
@@ -515,8 +538,8 @@ h6 {
 
 
   #hero .play-btn:hover::after {
-    border-left: 15px solid #009961;
-    transform: scale(20);
+    border-left: 15px solid #3f4f5c;
+    transform: scale(50);
   }
 
   #hero .play-btn:hover::before {
@@ -613,7 +636,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #34b7a7;
+  background: #0000FF;
   bottom: 0;
   left: calc(50% - 25px);
 }

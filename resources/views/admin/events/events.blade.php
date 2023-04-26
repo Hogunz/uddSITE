@@ -12,7 +12,7 @@
                         @foreach ($events as $event)
                             <div class="bg-white my-3" data-aos="fade-right">
                                 <img src="{{ asset('storage/' . $event->image) }}" alt="{{ $event->name }}"
-                                    class="img-fluid">
+                                    class="img-fluid" style="">
                                 <div class="p-3">
                                     <h2 class="">{{ $event->name }}</h2>
                                     <span class="text-sm">{{ $event->created_at }} by {{ $event->user->name }}</span>

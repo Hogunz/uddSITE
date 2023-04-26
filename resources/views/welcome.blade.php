@@ -6,12 +6,13 @@
 
     <section id="hero" class="d-flex align-items-center">
 
-        <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
+        <div class="container d-flex flex-column align-items-center">
 
             <div class="circle-container">
-                <img src="/assets/img/circle.png" alt="">
+                <img class="animate-spin" src="/assets/img/circle.png" alt="">
+                <img class="animate-spin1" src="/assets/img/circle.png" alt="">
                 <a href="https://youtu.be/q8eg5CcU4zY" class="glightbox play-btn" data-glightbox="gallery">
-                    <img src="/assets/img/logo_site.png" alt="">
+                    <img src="/assets/img/logo_site.png" data-aos="zoom-out" data-aos-delay="100" alt="">
                 </a>
             </div>
 

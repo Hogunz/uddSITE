@@ -2,7 +2,7 @@
 
     <!-- ======= About Section ======= -->
     <section id="faculty" class="about">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <div class="section-title"
                 style="min-height:100vh;  display: flex;
         flex-direction: column;

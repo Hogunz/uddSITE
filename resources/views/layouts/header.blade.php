@@ -7,13 +7,21 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-            <li><a class="active" href="/">Home</a></li>
+            {{-- <li><a class="active" href="/">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="{{ route('academics') }}">Academics</a></li>
             <li><a href="/faculty">Faculty</a></li>
             <li><a href="/events">Events</a></li>
             <li><a href="/pvmo">PVMO</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/contact">Contact</a></li> --}}
+
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a href="{{ route('academics') }}">Academics</a></li>
+            <li><a class="nav-link scrollto" href="#faculty">Faculty</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a class="nav-link scrollto" href="#pvmo">VMO</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             <!-- Authentication Links -->
             @guest
             @else

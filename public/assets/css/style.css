@@ -420,45 +420,43 @@ h6 {
 /*--------------------------------------------------------------
 # Logo Section
 --------------------------------------------------------------*/
-.circle-container {
-    position: relative;
-    display: inline-block;
-    width: 300px;
-    height: 300px;
-    transform-origin: center;
 
-  }
-
-  .circle-container img {
+.circle-container img {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+    inset: 0px;
+}
+.circle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-origin: center;
+    background-position: center;
+}
 
-  .circle-container a {
+
+.logo-container {
+    position: absolute;
+    top: 19%;
+    left: 19%;
+    transform-origin: center;
+    z-index: 1;
+    background-position: center;
+}
+
+.logo-container img {
+    width: 185px;
+    height: 185px;
     position: absolute;
     top: 50%;
-    left: 33.35%;
-    transform: translate(-50%, -50%);
-	transform-origin: center;
-    z-index: 1;
-  }
+    left: 50%;
+    overflow: hidden;
+}
+
   .animate-spin {
     animation: spin 2s linear 1;
-
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-  }  .animate-spin1 {
-    animation: spin 2s linear reverse;
 
     @keyframes spin {
       from {
@@ -477,8 +475,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("/assets/img/bg.jpg") top right;
-  background-color:gray;
+  background: url("/assets/img/globe.png") bottom left;
   background-size: cover;
 }
 
@@ -701,6 +698,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -728,8 +726,17 @@ section {
 
 
 /*--------------------------------------------------------------
-# Events
+# Faculty
 --------------------------------------------------------------*/
+
+#faculty{
+
+    background: url("/assets/img/ye.png");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position:right top;
+}
+
 
 /*--------------------------------------------------------------
 # Skills
@@ -821,7 +828,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #c8efea;
+  color: #0000FF;
   font-size: 26px;
 }
 
@@ -859,73 +866,13 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #34b7a7;
+  border: 1px solid #0000FF;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #34b7a7;
+  background-color: #0000FF;
 }
 
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-.resume .resume-title {
-  font-size: 26px;
-  font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #222222;
-}
-
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #34b7a7;
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #1d685f;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #effbf9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #34b7a7;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #34b7a7;
-}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -958,7 +905,7 @@ section {
   .portfolio #portfolio-flters li:hover,
   .portfolio #portfolio-flters li.filter-active {
     color: #fff;
-    background: #34b7a7;
+    background: rgb(91, 50, 240);
   }
 
   .portfolio #portfolio-flters li:last-child {

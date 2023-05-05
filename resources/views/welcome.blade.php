@@ -8,15 +8,18 @@
 
         <div class="container d-flex flex-column align-items-center">
 
-            <div class="circle-container">
-                <img class="animate-spin" src="/assets/img/circle.png" alt="">
-                <img class="animate-spin1" src="/assets/img/circle.png" alt="">
-                <a href="https://youtu.be/q8eg5CcU4zY" class="glightbox play-btn" data-glightbox="gallery">
+            <div class="circle-container img-fluid">
+                <img class="animate-spin " src="/assets/img/circle.png" alt="">
+                <div class="logo-container">
                     <img src="/assets/img/logo_site.png" data-aos="zoom-out" data-aos-delay="100" alt="">
-                </a>
+                </div>
             </div>
 
-            <h4 class="text-white text-center">Center of Development in Information <br>Technology Education</h4>
+
+
+            <h4 class="text-black font-weight-bolder text-center">Center of Development in Information <br>Technology
+                Education
+            </h4>
 
             <div class="gallery-container">
 
@@ -56,8 +59,12 @@
 
         </div>
     </section><!-- End Hero -->
-
-
+    <!-- changes -->
+    @include('about')
+    @include('faculty')
+    @include('pvmo')
+    @include('contact')
+    <!-- end changes -->
 </x-guest-layout>
 <script>
     var lightbox = GLightbox({

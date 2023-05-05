@@ -6,6 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>UdD - SITE</title>
+    <link rel="icon" type="" href="/assets/img/logo.png" />
     <meta content="" name="description">
     <meta content="" name="keywords">
 

@@ -97,17 +97,14 @@
                     <div class="col mb-4">
                         <div class="">
                             <img src="/assets/img/SITE_FACULTY/sir_jm.jpg"
-                                class="img-fluid first-letter:card-img-center"
-                                style="width:348px;height:348px;  object-fit: scale-down; " alt="...">
+                                style="width:348px;height:348px;  object-fit: scale-down; "
+                                class="img-fluid card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Jan Michael P. Caerlang, MIT</h5>
+                                <h5 class="card-title">Jan Julliene S. Narvasa</h5>
                                 <p class="card-text">Faculty</p>
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
 
             </div>

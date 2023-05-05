@@ -11,7 +11,7 @@
                 <h2 class="text-center">About</h2>
                 <p>The School of Information Technology Education (SITE) at Universidad de Dagupan is a higher
                     education institution
-                    that offers undergraduate and graduate programs in the field of information technology. The
+                    that offers undergraduate and graduate programs in the field of Information Technology. The
                     school is located
                     in Dagupan City, Pangasinan, Philippines.</p> <br>
                 <p>
@@ -20,35 +20,35 @@
                     Technology (BSIT)
                     and Bachelor of Science in Computer Science (BSCS). These programs provide students with a
                     strong foundation
-                    in the principles and practices of information technology, including programming, software
+                    in the principles and practices of Information Technology, including programming, software
                     development,
                     database management, and networking. The graduate program offered by the SITE is the Master of
                     Information
                     Technology (MIT). This program is designed for professionals who want to advance their knowledge
                     and skills in
-                    the field of information technology. The MIT program covers advanced topics such as system
+                    the field of Information Technology. The MIT program covers advanced topics such as system
                     analysis and design,
                     information security, and database administration.
 
                 </p><br>
                 <p>
-                    The faculty at the SITE consists of highly qualified and experienced professionals in the field
-                    of information technology.
+                    The faculty of the SITE consists of highly qualified and experienced professionals in the field
+                    of Information Technology.
                     They are committed to providing students with a quality education that prepares them for a
                     successful career in the industry.
                     The SITE also offers various opportunities for students to gain practical experience in the
-                    field of information technology.
-                    The school has partnerships with local businesses and organizations, which provide students with
+                    field of Information Technology.
+                    The school has both local and international industry partner which provide students with
                     internships and other
                     hands-on learning opportunities.
                 </p><br>
 
                 <p>
-                    The School of Information Technology Education at Universidad de Dagupan is a great place for
+                    The School of Information Technology Education at Universidad de Dagupan is a noble place for
                     students who are interested
-                    in pursuing a career in the field of information technology. With its comprehensive programs and
-                    experienced faculty,
-                    the SITE provides students with the knowledge and skills they need to succeed in this fast-paced
+                    in pursuing a career in the field of Information Technology. With its comprehensive programs and
+                    experienced faculty, SITE provides students with the knowledge and skills they need to succeed in
+                    this fast-paced
                     and rapidly-evolving industry.
                 </p>
             </div>

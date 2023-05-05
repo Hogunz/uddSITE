@@ -32,7 +32,7 @@
                             </p>
                             <p>
                                 The program also includes the study of the standards and practices in Software
-                                Engineering. It Prepares students to acquire skills and disciplines required for
+                                Engineering. It prepares students to acquire skills and disciplines required for
                                 designing, writing and modifying software components, modules and applications that
                                 comprise software solutions.
                             </p>
@@ -140,11 +140,11 @@
                             </p>
                             <p>
                                 The program also includes the study of the standards and practices in Software
-                                Engineering. It Prepares students to acquire skills and disciplines required for
+                                Engineering. It prepares students to acquire skills and disciplines required for
                                 designing, writing and modifying software components, modules and applications that
                                 comprise software solutions.
                             </p>
-                            <p class="font-weight-bold">Program Outcomes:
+                            <p class="">Program Outcomes:
                             </p>
                             <p class="">A graduate of Bachelor of Science in Computer Science must be able to:
                                 <li>Articulate the computing theories, principles and knowledge domain to address

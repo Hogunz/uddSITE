@@ -6,7 +6,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center; text-align:justify;">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
 
             <div class="section-title">
                 <h2>Contact</h2>

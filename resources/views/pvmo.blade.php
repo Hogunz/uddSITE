@@ -2,7 +2,7 @@
 
     <!-- ======= About Section ======= -->
     <section id="pvmo" class="pvmo bg-light">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <div class="section-title">
                 <h2 class="text-center">Bachelor of Science in Information Technology</h2>
             </div>
@@ -18,7 +18,7 @@
                     </p>
                 </div>
                 <div class="w-100"></div>
-                <div class="col-lg col-sm-6  border p-2" data-aos="fade-right"
+                <div class="col-lg col-sm-6  border p-2"
                     style=" background-image: linear-gradient(to bottom, rgba(109, 207, 246, 0.75), transparent); ">
                     <h1>
                         Mission
@@ -28,7 +28,7 @@
                         adaptive to the global environment.
                     </p>
                 </div>
-                <div class="col-lg col-sm-6  border p-2" data-aos="fade-left"
+                <div class="col-lg col-sm-6  border p-2"
                     style=" background-image: linear-gradient(to bottom, rgba(109, 207, 246, 0.75), transparent); ">
                     <h1>
                         Core Values

@@ -2,7 +2,7 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about bg-light">
-        <div class="container" data-aos="fade-up">
+        <div class="container">
             <div class="section-title"
                 style="min-height:100vh; min-width:100%;  display: flex;
                 flex-direction: column;

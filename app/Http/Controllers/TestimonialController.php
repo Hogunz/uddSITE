@@ -18,9 +18,9 @@ class TestimonialController extends Controller
         $testimonials = Testimonial::get();
         return view('admin.testimonials.index', compact('testimonials'));
     }
+
     public function academics()
     {
-
         $testimonials = Testimonial::get();
         return view('academics', compact('testimonials'));
     }

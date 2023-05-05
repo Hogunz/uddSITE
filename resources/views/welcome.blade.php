@@ -61,7 +61,9 @@
     </section><!-- End Hero -->
     <!-- changes -->
     @include('about')
+    @include('academics')
     @include('faculty')
+    @include('events')
     @include('pvmo')
     @include('contact')
     <!-- end changes -->

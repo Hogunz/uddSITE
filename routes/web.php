@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TestimonialController;
 
 /*
@@ -15,9 +16,7 @@ use App\Http\Controllers\TestimonialController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [DashboardController::class, 'welcome']);
 Route::get('/about', function () {
     return view('about');
 });

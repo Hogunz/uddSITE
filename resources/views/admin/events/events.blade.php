@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <main id="main">
+    <main>
         <!-- ======= About Section ======= -->
         <section id="events" class="events">
             <div class="container" data-aos="fade-up">
@@ -45,5 +45,5 @@
                 </div>
             </div>
         </section><!-- End Testimonials Section -->
-    </main><!-- End #main -->
+    </main>
 </x-guest-layout>

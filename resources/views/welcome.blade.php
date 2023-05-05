@@ -10,7 +10,7 @@
 
             <div class="circle-container img-fluid">
                 <img class="animate-spin " src="/assets/img/circle.png" alt="">
-                <div class="logo-container">
+                <div class="logo-container play-btn glightbox">
                     <img src="/assets/img/logo_site.png" data-aos="zoom-out" data-aos-delay="100" alt="">
                 </div>
             </div>

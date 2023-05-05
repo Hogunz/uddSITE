@@ -2,7 +2,7 @@
     <main id="main">
         <!-- ======= About Section ======= -->
         <section id="events" class="events">
-            <div class="container" data-aos="fade-up">
+            <div class="container">
                 <div class="section-title">
                     <h2 class="text-sm-center">Post</h2>
                 </div>

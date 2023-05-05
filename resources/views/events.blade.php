@@ -1,7 +1,7 @@
 <!-- ======= About Section ======= -->
 <section id="events" class="events">
 
-    <div class="container" data-aos="fade-up">
+    <div class="container">
         <div class="section-title">
             <h2 class="text-sm-center">Events</h2>
         </div>
@@ -9,7 +9,7 @@
         <div class="row my-5 justify-content-center">
             <div class="col-sm-8">
                 @foreach ($events as $event)
-                    <div class="bg-white my-3" data-aos="fade-right">
+                    <div class="bg-white my-3">
                         <img src="{{ asset('storage/' . $event->image) }}" alt="{{ $event->name }}" class="img-fluid"
                             style="">
                         <div class="p-3">
@@ -30,7 +30,7 @@
                         <div class="col-sm-6 p-0">
                             <img src="{{ asset('storage/' . $event->image) }}" class="img-fluid">
                         </div>
-                        <div class="col-sm-6" data-aos="fade-left">
+                        <div class="col-sm-6">
                             <a href="{{ route('event.show', $event->id) }}"> <span
                                     class="font-weight-bold text-sm-xs text-primary ">{{ $event->name }}</span></a><br>
                             <span><i class="fa-regular fa-user text-dark"></i>{{ $event->user->name }}</span><br>

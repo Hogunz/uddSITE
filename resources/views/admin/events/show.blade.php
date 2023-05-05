@@ -2,7 +2,7 @@
     <main id="main">
         <!-- ======= About Section ======= -->
         <section id="events" class="events">
-            <div class="container" data-aos="fade-up">
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-8 ">
                         <div class="bg-white">

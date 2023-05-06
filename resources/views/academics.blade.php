@@ -21,13 +21,14 @@
                     <h1>
                         BSIT Program Description
                     </h1>
-                    <p class="text-justify">BS Computer Science is a 4-year course that produces graduates
+                    <p class="" style="text-align: justify">BS Computer Science is a 4-year course that produces
+                        graduates
                         with the computing
                         concepts and theories, algorithmic foundations and new developments in computing.
                         The program prepares students to design and create algorithmically complex software
                         and develop new and effective algorithms for solving computing problems.
                     </p>
-                    <p>
+                    <p class="" style="text-align: justify">
                         The program also includes the study of the standards and practices in Software
                         Engineering. It prepares students to acquire skills and disciplines required for
                         designing, writing and modifying software components, modules and applications that
@@ -36,9 +37,13 @@
                     <p class="font-weight-bold">Program Outcomes:
                     </p>
                     <p class="">A graduate of Bachelor of Science in Computer Science must be able to:
-                        <li>Develop and implement software applications using various programming languages and
+                    </p>
+                    <ul class=" " style="text-align: justify">
+                        <li>Develop and implement software applications using
+                            various programming languages and
                             tools.</li>
-                        <li>Design and develop websites and web applications using front-end and back-end
+                        <li>Design and develop websites and web applications
+                            using front-end and back-end
                             technologies.</li>
                         <li>Analyze complex business problems and design effective solutions using information
                             technology.</li>
@@ -56,8 +61,11 @@
                         <li>Develop and implement mobile applications for various platforms and devices.</li>
                         <li>Communicate technical information clearly and effectively to both technical and
                             non-technical audiences.</li>
-                    </p>
+                    </ul>
+
                     <p class="font-weight-bold">Career Opportunities:
+                    </p>
+                    <ul class=" " style="text-align: justify">
                         <li>Software Developer/Engineer</li>
                         <li>Web Developer/Designer</li>
                         <li>Database Administrator/Analyst
@@ -71,14 +79,15 @@
                         <li>Data Scientist</li>
                         <li>Systems Analyst.</li>
                         <li>Mobile Application Developer</li>
-                    </p>
+                    </ul>
                     <!-- ======= Testimonials Section ======= -->
                     <section id="testimonials" class="testimonials">
                         <div class="container">
 
                             <div class="section-title">
                                 <h2>Testimonials</h2>
-                                <p>Testimonials for both graduate and non-graduate individuals in the field of
+                                <p style="text-align: justify">Testimonials for both graduate and non-graduate
+                                    individuals in the field of
                                     Information Technology (IT) can serve as powerful tools to showcase their
                                     skills, experience, and achievements.</p>
                             </div>
@@ -125,13 +134,13 @@
                     <h1>
                         BSCS Program Description
                     </h1>
-                    <p class="text-justify">BS Computer Science is a 4-year course that produces graduates
+                    <p style="text-align: justify">BS Computer Science is a 4-year course that produces graduates
                         with the computing
                         concepts and theories, algorithmic foundations and new developments in computing.
                         The program prepares students to design and create algorithmically complex software
                         and develop new and effective algorithms for solving computing problems.
                     </p>
-                    <p>
+                    <p style="text-align: justify">
                         The program also includes the study of the standards and practices in Software
                         Engineering. It prepares students to acquire skills and disciplines required for
                         designing, writing and modifying software components, modules and applications that
@@ -140,6 +149,9 @@
                     <p class="">Program Outcomes:
                     </p>
                     <p class="">A graduate of Bachelor of Science in Computer Science must be able to:
+                    </p>
+                    <ul style="text-align: justify">
+
                         <li>Articulate the computing theories, principles and knowledge domain to address
                             real-world
                             problems.</li>
@@ -153,7 +165,8 @@
                         <li>Engage in independent learning for continual development as a computing
                             professional.
                         </li>
-                    </p>
+                    </ul>
+
                     <p class="font-weight-bold">Career Opportunities:
                         <li>Software Developer/Engineer</li>
                         <li>Data Scientist</li>
@@ -175,7 +188,8 @@
 
                             <div class="section-title">
                                 <h2>Testimonials</h2>
-                                <p>Testimonials for both graduate and non-graduate individuals in the field of
+                                <p style="text-align: justify">Testimonials for both graduate and non-graduate
+                                    individuals in the field of
                                     Computer Science (CS) can serve as powerful tools to showcase their skills,
                                     experience, and achievements.</p>
                             </div>

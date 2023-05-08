@@ -100,7 +100,7 @@
                                 style="width:348px;height:348px;  object-fit: scale-down; "
                                 class="img-fluid card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Jan Julliene S. Narvasa</h5>
+                                <h5 class="card-title">Jan Michael P. Caerlang</h5>
                                 <p class="card-text">Faculty</p>
                             </div>
                         </div>

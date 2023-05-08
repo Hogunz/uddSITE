@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Event;
 use App\Models\Dashboard;
+use App\Models\Testimony;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
@@ -12,9 +13,10 @@ class DashboardController extends Controller
     public function welcome()
     {
         $testimonials = Testimonial::all();
+        $testimonies = Testimony::all();
         $events = Event::orderBy('created_at', 'desc')->get();
         $moreposts = Event::inRandomOrder()->limit(5)->get();
-        return view('welcome', compact('testimonials', 'events', 'moreposts'));
+        return view('welcome', compact('testimonies', 'testimonials', 'events', 'moreposts'));
     }
 
     /**

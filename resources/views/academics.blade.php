@@ -117,19 +117,6 @@
                                                 </div>
 
 
-                                                {{-- <div class="d-flex flex-row justify-content-center bd-highlight mb-3">
-                                                    <div class="p-2 bd-highlight">
-                                                        <img src="{{ asset('storage/' . $testimonial->image) }}"
-                                                            class="testimonial-img ">
-                                                    </div>
-                                                    <div class="p-2 bd-highlight">
-                                                        <h3>{{ $testimonial->name }}</h3>
-                                                        <h4>{{ $testimonial->course }}</h4>
-                                                        <h4>{{ $testimonial->latin }}</h4>
-                                                        <h4>{{ $testimonial->position }}</h4>
-                                                        <h3>{{ $testimonial->place }}</h3>
-                                                    </div>
-                                                </div> --}}
                                                 <p>
                                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                                     {!! $testimonial->content !!}
@@ -214,70 +201,40 @@
                                     experience, and achievements.</p>
                             </div>
 
+
                             <div class="testimonials-slider swiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-item">
+                                    @foreach ($testimonies as $testimony)
+                                        <div class="swiper-slide">
+                                            <div class="testimonial-item">
 
-
-
-
-                                            <div class="">
-                                                <div class="col-sm">
-                                                    <div class="p-2 bd-highlight">
-                                                        <img src="assets/img/testimonials/1.jpg" class="testimonial-img"
-                                                            alt="">
+                                                <div class="">
+                                                    <div class="col-sm">
+                                                        <div class="p-2 bd-highlight">
+                                                            <img src="{{ asset('storage/' . $testimony->image) }}"
+                                                                class="testimonial-img ">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <div class="p-2 bd-highlight">
+                                                            <h3>{{ $testimony->name }}</h3>
+                                                            <h4>{{ $testimony->course }}</h4>
+                                                            <h4>{{ $testimony->latin }}</h4>
+                                                            <h4>{{ $testimony->position }}</h4>
+                                                            <h3>{{ $testimony->place }}</h3>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm">
-                                                    <div class="p-2 bd-highlight">
-                                                        <h3>Vanessa Eliscupides Yambao</h3>
-                                                        <h4>BS in Computer Science 2002</h4>
-                                                        <h4>Cum Laude</h4>
-                                                        <h4>Bank Officer IV</h4>
-                                                        <h3>Bangko Sentral ng Pilipinas</h3>
-                                                    </div>
-                                                </div>
+
+
+                                                <p>
+                                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                                    {!! $testimony->content !!}
+                                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                                </p>
                                             </div>
-
-
-                                            {{--
-
-
-                                            <div class="d-flex flex-row justify-content-center bd-highlight mb-3">
-                                                <div class="p-2 bd-highlight">
-                                                    <img src="assets/img/testimonials/1.jpg" class="testimonial-img"
-                                                        alt="">
-                                                </div>
-                                                <div class="p-2 bd-highlight">
-                                                    <h3>Vanessa Eliscupides Yambao</h3>
-                                                    <h4>BS in Computer Science 2002</h4>
-                                                    <h4>Cum Laude</h4>
-                                                    <h4>Bank Officer IV</h4>
-                                                    <h3>Bangko Sentral ng Pilipinas</h3>
-                                                </div>
-                                            </div> --}}
-                                            <p>
-                                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                                My journey in college is one of the best things that happened in
-                                                my life. As a person who values high-quality education and
-                                                someone who believes that God's given talent should be used to
-                                                glorify His Name, Colegio de Dagupan was my best partner then.
-                                                CdD has not only helped me succeed me to become a well-rounded
-                                                person and to thrive in an ever-changing environment. I am
-                                                honored to be part of a supportive environment where talents and
-                                                skills are valued through curricular and extracurricular
-                                                programs. I am also thankful for my outstanding collegues, who
-                                                have shared experiences with me in my adventure. I extend my
-                                                gratitude to the Arzadon family, especially to my mentor, Sir
-                                                Voltaire. His support and kindness will always stay in my heart.
-                                                This proud Dagupeña will be forever grateful to my alma mater.
-                                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                            </p>
-                                        </div>
-                                    </div><!-- End testimonial item -->
-
-
+                                        </div><!-- End testimonial item -->
+                                    @endforeach
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>

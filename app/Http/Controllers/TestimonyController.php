@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Testimonial;
+use App\Models\Testimony;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class TestimonialController extends Controller
+class TestimonyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,15 +15,16 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        $testimonials = Testimonial::get();
-        return view('admin.testimonials.index', compact('testimonials'));
+        $testimonies = Testimony::get();
+        return view('admin.testimonies.index', compact('testimonies'));
     }
 
     public function academics()
     {
-        $testimonials = Testimonial::all();
-        return view('academics', compact('testimonials'));
+        $testimonies = Testimony::all();
+        return view('academics', compact('testimonies'));
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -32,7 +33,7 @@ class TestimonialController extends Controller
      */
     public function create()
     {
-        return view('admin.testimonials.create');
+        return view('admin.testimonies.create');
     }
 
     /**
@@ -57,28 +58,28 @@ class TestimonialController extends Controller
         $imagePath = $request->file('image')->store('public');
         $imageName = basename($imagePath);
 
-        $testimonial = new Testimonial;
-        $testimonial->name = $request->input('name');
-        $testimonial->image = $imageName;
-        $testimonial->course = $request->input('course');
-        $testimonial->latin = $request->input('latin');
-        $testimonial->position = $request->input('position');
-        $testimonial->place = $request->input('place');
-        $testimonial->content = $request->input('content');
+        $testimony = new Testimony;
+        $testimony->name = $request->input('name');
+        $testimony->image = $imageName;
+        $testimony->course = $request->input('course');
+        $testimony->latin = $request->input('latin');
+        $testimony->position = $request->input('position');
+        $testimony->place = $request->input('place');
+        $testimony->content = $request->input('content');
 
-        $testimonial->user_id = Auth::id();
-        $testimonial->save();
+        $testimony->user_id = Auth::id();
+        $testimony->save();
 
-        return redirect()->route('testimonials.index');
+        return redirect()->route('testimonies.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Testimonial  $testimonial
+     * @param  \App\Models\Testimony  $testimony
      * @return \Illuminate\Http\Response
      */
-    public function show(Testimonial $testimonial)
+    public function show(Testimony $testimony)
     {
         //
     }
@@ -86,22 +87,22 @@ class TestimonialController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Testimonial  $testimonial
+     * @param  \App\Models\Testimony  $testimony
      * @return \Illuminate\Http\Response
      */
-    public function edit(Testimonial $testimonial)
+    public function edit(Testimony $testimony)
     {
-        return view('admin.testimonials.edit', compact('testimonial'));
+        return view('admin.testimonies.edit', compact('testimonies'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Testimonial  $testimonial
+     * @param  \App\Models\Testimony  $testimony
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Testimonial $testimonial)
+    public function update(Request $request, Testimony $testimony)
     {
         $request->validate([
             'name' => 'required|string|max:255',
@@ -115,29 +116,29 @@ class TestimonialController extends Controller
 
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('events', 'public');
-            $testimonial->image = $imagePath;
+            $testimony->image = $imagePath;
         }
 
-        $testimonial->name = $request->name;
-        $testimonial->course = $request->course;
-        $testimonial->latin = $request->input('latin');
-        $testimonial->position = $request->input('position');
-        $testimonial->place = $request->input('place');
-        $testimonial->content = $request->input('content');
-        $testimonial->save();
+        $testimony->name = $request->name;
+        $testimony->course = $request->course;
+        $testimony->latin = $request->input('latin');
+        $testimony->position = $request->input('position');
+        $testimony->place = $request->input('place');
+        $testimony->content = $request->input('content');
+        $testimony->save();
 
-        return redirect()->route('testimonials.index');
+        return redirect()->route('testimonies.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Testimonial  $testimonial
+     * @param  \App\Models\Testimony  $testimony
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Testimonial $testimonial)
+    public function destroy(Testimony $testimony)
     {
-        $testimonial->delete();
-        return redirect()->route('testimonials.index');
+        $testimony->delete();
+        return redirect()->route('testimonies.index');
     }
 }

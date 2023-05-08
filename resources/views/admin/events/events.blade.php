@@ -4,7 +4,7 @@
         <section id="events" class="events">
             <div class="container">
                 <div class="section-title">
-                    <h2 class="text-sm-center">Events</h2>
+                    <h2 class="text-sm-center">News & Events</h2>
                 </div>
 
                 <div class="row my-5 justify-content-center">

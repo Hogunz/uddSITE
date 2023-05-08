@@ -8,7 +8,7 @@
             </div>
 
             <div class="row gap-2">
-                <div class="col-lg col-sm-6  border p-2">
+                <div class="col-lg col-sm-6 p-2">
                     <h1>
                         Vision
                     </h1>
@@ -17,9 +17,7 @@
                         world.
                     </p>
                 </div>
-                <div class="w-100"></div>
-                <div class="col-lg col-sm-6  border p-2"
-                    style=" background-image: linear-gradient(to bottom, rgba(109, 207, 246, 0.75), transparent); ">
+                <div class="col-lg col-sm-6 p-2">
                     <h1>
                         Mission
                     </h1>
@@ -28,8 +26,7 @@
                         adaptive to the global environment.
                     </p>
                 </div>
-                <div class="col-lg col-sm-6  border p-2"
-                    style=" background-image: linear-gradient(to bottom, rgba(109, 207, 246, 0.75), transparent); ">
+                <div class="col-lg col-sm-6 p-2">
                     <h1>
                         Core Values
                     </h1>

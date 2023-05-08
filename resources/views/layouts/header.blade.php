@@ -19,7 +19,7 @@
                 <li><a class="nav-link scrollto" href="#about">About</a></li>
                 <li><a class="nav-link scrollto" href="#portfolio">Academics</a></li>
                 <li><a class="nav-link scrollto" href="#faculty">Faculty</a></li>
-                <li><a class="nav-link scrollto" href="#events">Events</a></li>
+                <li><a class="nav-link scrollto" href="#events">News & Events</a></li>
                 <li><a class="nav-link scrollto" href="#pvmo">VMO</a></li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 <!-- Authentication Links -->
@@ -37,7 +37,10 @@
                             Dashboard
                         </a>
                         <a class="dropdown-item" href="{{ route('testimonials.index') }}">
-                            Testimonials
+                            Testimonials BSIT
+                        </a>
+                        <a class="dropdown-item" href="{{ route('testimonies.index') }}">
+                            Testimonials BSCS
                         </a>
                         <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();

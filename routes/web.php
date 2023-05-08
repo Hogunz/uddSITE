@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\TestimonyController;
 use App\Http\Controllers\TestimonialController;
 
 /*
@@ -37,6 +38,8 @@ Route::resource('events', EventController::class);
 Route::get('/events/{event}', [EventController::class, 'show'])->name('event.show');
 //testimonials
 Route::get('/academics', [TestimonialController::class, 'academics'])->name('academics');
+Route::get('/academics', [TestimonyController::class, 'academics'])->name('academics');
+Route::resource('testimonies', TestimonyController::class);
 Route::resource('testimonials', TestimonialController::class);
 require __DIR__ . '/auth.php';
 

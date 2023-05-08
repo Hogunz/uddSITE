@@ -97,7 +97,27 @@
                                     @foreach ($testimonials as $testimonial)
                                         <div class="swiper-slide">
                                             <div class="testimonial-item">
-                                                <div class="d-flex flex-row justify-content-center bd-highlight mb-3">
+
+                                                <div class="">
+                                                    <div class="col-sm">
+                                                        <div class="p-2 bd-highlight">
+                                                            <img src="{{ asset('storage/' . $testimonial->image) }}"
+                                                                class="testimonial-img ">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <div class="p-2 bd-highlight">
+                                                            <h3>{{ $testimonial->name }}</h3>
+                                                            <h4>{{ $testimonial->course }}</h4>
+                                                            <h4>{{ $testimonial->latin }}</h4>
+                                                            <h4>{{ $testimonial->position }}</h4>
+                                                            <h3>{{ $testimonial->place }}</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                {{-- <div class="d-flex flex-row justify-content-center bd-highlight mb-3">
                                                     <div class="p-2 bd-highlight">
                                                         <img src="{{ asset('storage/' . $testimonial->image) }}"
                                                             class="testimonial-img ">
@@ -109,7 +129,7 @@
                                                         <h4>{{ $testimonial->position }}</h4>
                                                         <h3>{{ $testimonial->place }}</h3>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                                 <p>
                                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                                     {!! $testimonial->content !!}
@@ -196,15 +216,39 @@
 
                             <div class="testimonials-slider swiper">
                                 <div class="swiper-wrapper">
-
                                     <div class="swiper-slide">
                                         <div class="testimonial-item">
+
+
+
+
+                                            <div class="">
+                                                <div class="col-sm">
+                                                    <div class="p-2 bd-highlight">
+                                                        <img src="assets/img/testimonials/1.jpg" class="testimonial-img"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm">
+                                                    <div class="p-2 bd-highlight">
+                                                        <h3>Vanessa Eliscupides Yambao</h3>
+                                                        <h4>BS in Computer Science 2002</h4>
+                                                        <h4>Cum Laude</h4>
+                                                        <h4>Bank Officer IV</h4>
+                                                        <h3>Bangko Sentral ng Pilipinas</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            {{--
+
+
                                             <div class="d-flex flex-row justify-content-center bd-highlight mb-3">
                                                 <div class="p-2 bd-highlight">
                                                     <img src="assets/img/testimonials/1.jpg" class="testimonial-img"
                                                         alt="">
                                                 </div>
-
                                                 <div class="p-2 bd-highlight">
                                                     <h3>Vanessa Eliscupides Yambao</h3>
                                                     <h4>BS in Computer Science 2002</h4>
@@ -212,7 +256,7 @@
                                                     <h4>Bank Officer IV</h4>
                                                     <h3>Bangko Sentral ng Pilipinas</h3>
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                             <p>
                                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                                 My journey in college is one of the best things that happened in

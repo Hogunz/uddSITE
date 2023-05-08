@@ -19,7 +19,7 @@ class CreateTestimonialsTable extends Migration
             $table->string('name');
             $table->string('image');
             $table->longText('course');
-            $table->longText('latin');
+            $table->longText('latin')->nullable();
             $table->longText('position');
             $table->longText('place');
             $table->longText('content');

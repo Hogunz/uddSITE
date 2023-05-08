@@ -92,7 +92,7 @@ class TestimonyController extends Controller
      */
     public function edit(Testimony $testimony)
     {
-        return view('admin.testimonies.edit', compact('testimonies'));
+        return view('admin.testimonies.edit', compact('testimony'));
     }
 
     /**

@@ -7,7 +7,7 @@
                     <h2 class="text-sm-center">Post</h2>
                 </div>
                 <x-auth-validation-errors></x-auth-validation-errors>
-                <form action="{{ route('testimonials.update', ['testimony' => $testimony->id]) }}" method="post"
+                <form action="{{ route('testimonies.update', ['testimony' => $testimony->id]) }}" method="post"
                     enctype="multipart/form-data" class="border p-5">
                     @csrf
                     @method('PUT')

@@ -20,8 +20,8 @@ class CreateTestimoniesTable extends Migration
             $table->string('image');
             $table->longText('course');
             $table->longText('latin')->nullable();
-            $table->longText('position')->nullable();
-            $table->longText('place');
+            $table->longText('position');
+            $table->longText('place')->nullable();
             $table->longText('content');
             $table->timestamps();
         });

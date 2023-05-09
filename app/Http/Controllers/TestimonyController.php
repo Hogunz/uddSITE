@@ -51,7 +51,7 @@ class TestimonyController extends Controller
             'course' => 'required',
             'latin' => 'nullable',
             'position' => 'required',
-            'place' => 'required',
+            'place' => 'nullable',
             'content' => 'required',
         ]);
 

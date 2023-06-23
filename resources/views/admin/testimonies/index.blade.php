@@ -44,16 +44,27 @@
                                     {{ $testimony->content }}
                                 </td>
                                 <td class="d-flex gap-1">
-                                    <a href="{{ route('testimonies.edit', ['testimony' => $testimony->id]) }}"
-                                        class="href">
-                                        <button type="button" class="btn btn-success ">Edit</button>
-                                    </a>
-                                    <form action="{{ route('testimonies.destroy', $testimony) }}" method="post"
-                                        class="">
+                                    @if (!$testimony->trashed())
+                                        <a href="{{ route('testimonies.edit', ['testimony' => $testimony->id]) }}"
+                                            class="href">
+                                            <button type="button" class="btn btn-success ">Edit</button>
+                                        </a>
+                                        <form action="{{ route('testimonies.destroy', $testimony) }}" method="post"
+                                            class="">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger"
+                                                onclick="return confirm('Are you sure you want to delete this event?')">Delete</button>
+                                        </form>
+                                    @else
+                                        <a href="{{ route('testimonies.restore', $testimony) }}" class="href">
+                                            <button type="button" class="btn btn-info">Restore</button>
+                                        </a>
+                                    @endif
+                                    <form action="{{ route('testimonies.forceDelete', $testimony) }}" method="post">
                                         @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger"
-                                            onclick="return confirm('Are you sure you want to delete this event?')">Delete</button>
+                                        @method('delete')
+                                        <button type="submit" class="btn btn-warning">Delete Permanently</button>
                                     </form>
                                 </td>
 

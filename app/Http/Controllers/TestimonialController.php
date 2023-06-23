@@ -15,13 +15,13 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        $testimonials = Testimonial::get();
+        $testimonials = Testimonial::withTrashed()->get();
         return view('admin.testimonials.index', compact('testimonials'));
     }
 
     public function academics()
     {
-        $testimonials = Testimonial::all();
+        $testimonials = Testimonial::withTrashed()->get();
         return view('academics', compact('testimonials'));
     }
 
@@ -129,15 +129,27 @@ class TestimonialController extends Controller
         return redirect()->route('testimonials.index');
     }
 
+    public function restore($testimonial)
+    {
+        Testimonial::withTrashed()->find($testimonial)->restore();
+
+        return redirect()->route('testimonials.index')->with('status', 'Testimonial Successfully restored');
+    }
+    public function destroy(Testimonial $testimonial)
+    {
+        $testimonial->delete();
+        return redirect()->route('testimonials.index');
+    }
+    public function forceDelete(Testimonial $testimonial)
+    {
+        $testimonial->forceDelete();
+
+        return redirect()->route('testimonials.index')->with('status', 'Successfully Deleted');
+    }
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Testimonial  $testimonial
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Testimonial $testimonial)
-    {
-        $testimonial->delete();
-        return redirect()->route('testimonials.index');
-    }
 }

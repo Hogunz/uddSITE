@@ -15,13 +15,13 @@ class TestimonyController extends Controller
      */
     public function index()
     {
-        $testimonies = Testimony::get();
+        $testimonies = Testimony::withTrashed()->get();
         return view('admin.testimonies.index', compact('testimonies'));
     }
 
     public function academics()
     {
-        $testimonies = Testimony::all();
+        $testimonies = Testimony::withTrashed()->get();
         return view('academics', compact('testimonies'));
     }
 
@@ -136,6 +136,16 @@ class TestimonyController extends Controller
      * @param  \App\Models\Testimony  $testimony
      * @return \Illuminate\Http\Response
      */
+    public function restore($testimony)
+    {
+        Testimony::withTrashed()->find($testimony)->restore();
+        return redirect()->route('testimonies.index')->with('status', 'Testimonial Successfully restored');
+    }
+    public function forceDelete(Testimony $testimony)
+    {
+        $testimony->forceDelete();
+        return redirect()->route('testimonies.index')->with('status', 'Testimonial Successfully deleted');
+    }
     public function destroy(Testimony $testimony)
     {
         $testimony->delete();

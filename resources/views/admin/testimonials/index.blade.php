@@ -1,7 +1,7 @@
 <x-guest-layout>
     <main id="main">
         <!-- ======= About Section ======= -->
-        <section id="events" class="events" style="height:100vh;width:100%;">
+        <section id="events" class="events" style="">
             <div class="container">
                 <div class="section-title">
                     <h2 class="text-sm-center">POST</h2>
@@ -44,19 +44,30 @@
                                     {{ $testimonial->content }}
                                 </td>
                                 <td class="d-flex gap-1">
-                                    <a href="{{ route('testimonials.edit', ['testimonial' => $testimonial->id]) }}"
-                                        class="href">
-                                        <button type="button" class="btn btn-success ">Edit</button>
-                                    </a>
-                                    <form action="{{ route('testimonials.destroy', $testimonial) }}" method="post"
-                                        class="">
+                                    @if (!$testimonial->trashed())
+                                        <a href="{{ route('testimonials.edit', ['testimonial' => $testimonial->id]) }}"
+                                            class="href">
+                                            <button type="button" class="btn btn-success ">Edit</button>
+                                        </a>
+                                        <form action="{{ route('testimonials.destroy', $testimonial) }}" method="post"
+                                            class="">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger"
+                                                onclick="return confirm('Are you sure you want to delete this event?')">Delete</button>
+                                        </form>
+                                    @else
+                                        <a href="{{ route('testimonials.restore', $testimonial) }}" class="href">
+                                            <button type="button" class="btn btn-info">Restore</button>
+                                        </a>
+                                    @endif
+                                    <form action="{{ route('testimonials.forceDelete', $testimonial) }}"
+                                        method="post">
                                         @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger"
-                                            onclick="return confirm('Are you sure you want to delete this event?')">Delete</button>
+                                        @method('delete')
+                                        <button type="submit" class="btn btn-warning">Delete Permanently</button>
                                     </form>
                                 </td>
-
                             </tr>
                         @endforeach
                     </tbody>

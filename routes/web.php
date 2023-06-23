@@ -41,6 +41,13 @@ Route::get('/academics', [TestimonialController::class, 'academics'])->name('aca
 Route::get('/academics', [TestimonyController::class, 'academics'])->name('academics');
 Route::resource('testimonies', TestimonyController::class);
 Route::resource('testimonials', TestimonialController::class);
+
+//SoftDelete
+Route::delete('testimonials/forceDelete/{testimonial}', [TestimonialController::class, 'forceDelete'])->name('testimonials.forceDelete');
+Route::delete('testimonies/forceDelete/{testimonies}', [TestimonialController::class, 'forceDelete'])->name('testimonies.forceDelete');
+//Restore
+Route::get('testimonials/restore/{testimonial}', [TestimonialController::class, 'restore'])->name('testimonials.restore');
+Route::get('testimonies/restore/{testimonial}', [TestimonialController::class, 'restore'])->name('testimonies.restore');
 require __DIR__ . '/auth.php';
 
 

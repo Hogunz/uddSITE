@@ -1,7 +1,7 @@
 <div class="container-fluid sm:container d-flex justify-content-between align-items-center">
 
     <h1 class="logo me-auto me-lg-0"><a href="/">
-            <img src="/assets/img/site.png" alt=""></a></h1>
+            <img src="/assets/img/site.png" alt="" class="img-fluid"></a></h1>
     <!-- Uncomment below if you prefer to use an image logo -->
     <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 

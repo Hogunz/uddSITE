@@ -11,7 +11,7 @@
             @foreach ($events->shuffle()->take(6) as $event)
                 <div class="card-group col mb-4">
                     <div class="card ">
-                        <img src="{{ asset('storage/' . $event->image) }}" class="img-fluid img-thumbnail">
+                        <img src="{{ asset('storage/' . $event->image) }}" class="img-fluid">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <a href="{{ route('event.show', $event->id) }}"> <span
@@ -22,9 +22,9 @@
                     </div>
                 </div>
             @endforeach
-            <div>
-                <a class="btn btn-primary " href="/events" role="button">Show More</a>
-            </div>
+        </div>
+        <div>
+            <a class="btn btn-primary " href="/events" role="button">Show More</a>
         </div>
     </div>
 </section><!-- End Testimonials Section -->

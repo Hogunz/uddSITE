@@ -115,8 +115,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-
                                                 <p>
                                                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                                     {!! $testimonial->content !!}

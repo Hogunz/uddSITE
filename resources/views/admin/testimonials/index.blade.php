@@ -7,7 +7,7 @@
                     <h2 class="text-sm-center">POST</h2>
                 </div>
 
-                <table class="table table-hover">
+                <table class="table table-hover w-full">
                     <a href="{{ route('testimonials.create') }}" type="button" class="btn btn-success">Create</a>
                     <thead>
                         <tr>
@@ -25,22 +25,22 @@
                         @foreach ($testimonials as $testimonial)
                             <tr>
                                 <th scope="row"> {{ $testimonial->id }}</th>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimonial->name }}
                                 </td>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimonial->course }}
                                 </td>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimonial->latin }}
                                 </td>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimonial->position }}
                                 </td>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimonial->place }}
                                 </td>
-                                <td style="text-align: justify;">
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimonial->content }}
                                 </td>
                                 <td class="d-flex gap-1">

@@ -25,22 +25,22 @@
                         @foreach ($testimonies as $testimony)
                             <tr>
                                 <th scope="row"> {{ $testimony->id }}</th>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimony->name }}
                                 </td>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimony->course }}
                                 </td>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimony->latin }}
                                 </td>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimony->position }}
                                 </td>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimony->place }}
                                 </td>
-                                <td>
+                                <td class="text-truncate" style="max-width: 150px;">
                                     {{ $testimony->content }}
                                 </td>
                                 <td class="d-flex gap-1">

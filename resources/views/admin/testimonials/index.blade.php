@@ -40,7 +40,7 @@
                                 <td>
                                     {{ $testimonial->place }}
                                 </td>
-                                <td>
+                                <td style="text-align: justify;">
                                     {{ $testimonial->content }}
                                 </td>
                                 <td class="d-flex gap-1">

@@ -96,7 +96,7 @@
                     </div>
                     <div class="col mb-4">
                         <div class="">
-                            <img src="/assets/img/SITE_FACULTY/sir_jm.jpg"
+                            <img src="/assets/img/SITE_FACULTY/sir_jan_michael.jpg"
                                 style="width:348px;height:348px;  object-fit: scale-down; "
                                 class="img-fluid card-img-top" alt="...">
                             <div class="card-body">

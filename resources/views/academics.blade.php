@@ -102,7 +102,7 @@
                                                     <div class="col-sm">
                                                         <div class="p-2 bd-highlight">
                                                             <img src="{{ asset('storage/' . $testimonial->image) }}"
-                                                                class="testimonial-img ">
+                                                                class="testimonial-img img-fluid ">
                                                         </div>
                                                     </div>
                                                     <div class="col-sm">

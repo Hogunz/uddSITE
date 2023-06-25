@@ -2,7 +2,7 @@
 
     <main id="main">
         <!-- ======= About Section ======= -->
-        <section id="events" class="events" style="height:100vh;width:100%;">
+        <section id="events" class="events">
             <div class="container">
                 <div class="section-title">
                     <h2 class="text-sm-center">POST TABLE</h2>
@@ -14,6 +14,7 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Title</th>
+                                <th scope="col">Status</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -22,7 +23,8 @@
                                 <tr>
                                     <th scope="row">{{ $event->id }}</th>
                                     <td>{{ $event->name }}</td>
-                                    <td>
+                                    <td>{{ $event->status }}</td>
+                                    <td class="d-flex">
                                         <a href="{{ route('event.show', ['event' => $event->id]) }}"
                                             class="btn btn-primary">Show</a>
                                         <a href="{{ route('events.edit', ['event' => $event->id]) }}"
@@ -33,6 +35,14 @@
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-danger"
                                                 onclick="return confirm('Are you sure you want to delete this event?')">Delete</button>
+                                        </form>
+                                        <form action="{{ route('events.approval.change', $event) }}" method="post">
+                                            @csrf
+                                            @method('put')
+                                            <button class="btn btn-success" name="status"
+                                                value="approved">Approve</button>
+                                            <button class="btn btn-danger" name="status"
+                                                value="declined">Declined</button>
                                         </form>
                                     </td>
                                 </tr>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\ApprovalController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TestimonyController;
 use App\Http\Controllers\TestimonialController;
@@ -48,6 +49,9 @@ Route::delete('testimonies/forceDelete/{testimonies}', [TestimonialController::c
 //Restore
 Route::get('testimonials/restore/{testimonial}', [TestimonialController::class, 'restore'])->name('testimonials.restore');
 Route::get('testimonies/restore/{testimonial}', [TestimonialController::class, 'restore'])->name('testimonies.restore');
+//Approvals
+Route::get('/admin/events/index', [ApprovalController::class, 'index'])->name('events.approval.index');
+Route::put('/admin/blog/user/index/{event}/change-status', [ApprovalController::class, 'changeStatus'])->name('events.approval.change');
 require __DIR__ . '/auth.php';
 
 

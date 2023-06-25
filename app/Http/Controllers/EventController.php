@@ -21,8 +21,9 @@ class EventController extends Controller
 
     public function index()
     {
-        $events = Event::orderBy('created_at', 'desc')->get();
-        $moreposts = Event::inRandomOrder()->limit(5)->get();
+
+        $events = Event::where('status', 'approved')->orderBy('created_at', 'desc')->get();
+        $moreposts = Event::where('status', 'approved')->inRandomOrder()->limit(5)->get();
         return view('admin.events.events', compact('events', 'moreposts')); // pass both $events and $moreposts to the view
     }
 

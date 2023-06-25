@@ -14,8 +14,8 @@ class DashboardController extends Controller
     {
         $testimonials = Testimonial::all();
         $testimonies = Testimony::all();
-        $events = Event::orderBy('created_at', 'desc')->get();
-        $moreposts = Event::inRandomOrder()->limit(5)->get();
+        $events = Event::where('status', 'approved')->orderBy('created_at', 'desc')->get();
+        $moreposts = Event::where('status', 'approved')->inRandomOrder()->limit(5)->get();
         return view('welcome', compact('testimonies', 'testimonials', 'events', 'moreposts'));
     }
 

@@ -12,6 +12,7 @@ class Event extends Model
         'name', // Add the name field to the fillable array
         'image',
         'content',
+        'status',
         'start_time',
         'end_time',
         // Add any other fields that can be mass assigned here

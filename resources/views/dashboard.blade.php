@@ -22,7 +22,7 @@
                             @foreach ($events as $event)
                                 <tr>
                                     <th scope="row">{{ $event->id }}</th>
-                                    <td>{{ $event->name }}</td>
+                                    <td class="text-truncate" style="max-width: 300px;">{{ $event->name }}</td>
                                     <td>{{ $event->status }}</td>
                                     <td class="d-flex">
                                         <a href="{{ route('event.show', ['event' => $event->id]) }}"
@@ -36,14 +36,16 @@
                                             <button type="submit" class="btn btn-danger"
                                                 onclick="return confirm('Are you sure you want to delete this event?')">Delete</button>
                                         </form>
-                                        <form action="{{ route('events.approval.change', $event) }}" method="post">
-                                            @csrf
-                                            @method('put')
-                                            <button class="btn btn-success" name="status"
-                                                value="approved">Approve</button>
-                                            <button class="btn btn-danger" name="status"
-                                                value="declined">Declined</button>
-                                        </form>
+                                        @if (auth()->user()->hasRole('admin'))
+                                            <form action="{{ route('events.approval.change', $event) }}" method="post">
+                                                @csrf
+                                                @method('put')
+                                                <button class="btn btn-success" name="status"
+                                                    value="approved">Approve</button>
+                                                <button class="btn btn-danger" name="status"
+                                                    value="declined">Declined</button>
+                                            </form>
+                                        @endif
                                     </td>
                                 </tr>
                             @endforeach
